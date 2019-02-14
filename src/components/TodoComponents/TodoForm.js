@@ -2,7 +2,7 @@ import React from 'react';
 
 const TodoForm = props => {
   return (
-    <form onSubmit={props.addTodo}>
+    <form>
       <input
         type="text"
         value={props.task}
@@ -10,7 +10,7 @@ const TodoForm = props => {
         onChange={props.handleChanges}
         placeholder="...todo"
       />
-      <button type="submit">Add Todo</button>
+      <button onClick={props.addTask}>Add Todo</button>
     </form>
   );
 };
